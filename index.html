@@ -5,19 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <!-- Подключение CSS -->
     <link rel="stylesheet" href="style/style.css">
+
+    <!-- Подключение JS скрипта -->
+    <script defer src="script.js"></script>
 </head>
 
 <body>
     <header class="header">
         <nav class="nav">
-            <ol>
-                <li><a href="index.html#technology">Технологии</a></li>
-                <li><a href="index.html#portfolio">Портфолио</a></li>
-                <!-- <li>О себе</li> -->
-                <li><a href="index.html#contacts">Контакты</a></li>
-            </ol>
+            <div class="header__burger" id="header_burger">
+                <span></span>
+            </div>
+            <div class="header__menu" id="header_burger">
+                <ol class="header__list">
+                    <li><a href="index.html#skills">Навыки</a></li>
+                    <li><a href="index.html#portfolio">Портфолио</a></li>
+                    <!-- <li><a href="index.html#experience">Опыт работы</a></li> -->
+                    <li><a href="index.html#contacts">Контакты</a></li>
+                </ol>
+            </div>
         </nav>
         <div class="mainInfo">
             <div class="name">
@@ -31,91 +39,136 @@
             </div>
         </div>
     </header>
-    <main class="main">
-        <div class="technology">
-            <h2 id="technology">Технологии</h2>
-            <div class="steck">
-                <div>
-                    <img src="https://static.vecteezy.com/system/resources/previews/007/571/212/original/frontend-development-line-icon-vector.jpg" alt="frontend-icon" width="100px"/>
-                    <h3>Frontend</h3>
-                    <p>Разработка клиентской части сайта</p>
-                    <table>
-                        <tr>
-                            <td><img src="image/html-logo.png" alt="html-logo" width="50px"></td>
-                            <td><img src="image/css.png" alt="css-logo" width="50px"></td>
-                            <td><img src="image/Unofficial_JavaScript_logo_2.svg.png" alt="js-logo" width="50px"></td>
-                            <td><img src="image/react.png" alt="react-logo" width="50px"></td>
-                            <td><img src="image/Angul.png" alt="angular-logo" width="50px"></td>
-                        </tr>
-                    </table>
+
+    <div class="skills">
+        <h2 id="skills">Навыки</h2>
+        <div class="cards">
+            <div class="skill__card">
+                <img src="image/html-logo.png" alt="html-logo">
+                <h3>HTML</h3>
+            </div>
+            <div class="skill__card">
+                <img src="image/css.png" alt="css-logo">
+                <h3>CSS</h3>
+            </div>
+            <div class="skill__card">
+                <img src="image/Unofficial_JavaScript_logo_2.svg.png" alt="js-logo">
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill__card">
+                <img src="image/react.png" alt="react-logo">
+                <h3>React</h3>
+            </div>
+            <div class="skill__card">
+                <img src="image/Angul.png" alt="angular-logo">
+                <h3>Angular</h3>
+            </div>
+            <div class="skill__card">
+                <img src="image/python.png" alt="py-logo">
+                <h3>Python</h3>
+            </div>
+            <div class="skill__card">
+                <img src="image/dj-logo.png" alt="django-logo">
+                <h3>Django</h3>
+            </div>
+            <div class="skill__card">
+                <img src="image/128px-Node.js_logo.svg.png" alt="nodejs-logo">
+                <h3>Node.js</h3>
+            </div>
+            <div class="skill__card">
+                <img src="image/Postgresql_elephant.svg.png" alt="PostgreSQL-logo">
+                <h3>PostgreSQL</h3>
+            </div>
+            <div class="skill__card">
+                <img src="image/SQL-logo.png" alt="SQL-logo">
+                <h3>SQL</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio">
+        <h2 id="portfolio">Портфолио</h2>
+        <div class="portfolio__cards">
+            <div class="portfolio__card">
+                <img src="https://www.sostav.ru/images/news/2021/08/13/7kl9vb6z.png" alt="ГК Самолет">
+                <div class="card__info">
+                    <h3>ГК Самолет</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus soluta rerum eligendi quam eos modi..</p>
+                    <button>Подробнее</button>
                 </div>
-                <div>
-                    <img src="https://static.vecteezy.com/system/resources/previews/007/570/850/original/backend-development-line-icon-vector.jpg" alt="backend-icon" width="100px">
-                    <h3>Backend</h3>
-                    <p>Разработка серверной части сайта</p>
-                    <table>
-                        <tr>
-                            <td><img src="image/python.png" alt="py-logo" width="50px"></td>
-                            <td><img src="image/dj-logo.png" alt="django-logo" width="50px"></td>
-                            <td><img src="image/128px-Node.js_logo.svg.png" alt="nodejs-logo" width="50px"></td>
-                            <td><img src="image/Postgresql_elephant.svg.png" alt="PostgreSQL-logo" width="50px"></td>
-                            <td><img src="image/SQL-logo.png" alt="SQL-logo" width="50px"></td>
-                        </tr>
-                    </table>
+            </div>
+            <div class="portfolio__card">
+                <img src="https://i.pinimg.com/564x/a3/c7/4e/a3c74e5cc03fa60437c2721d29b2750a.jpg" alt="General BIM">
+                <div class="card__info">
+                    <h3>General BIM</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <button>Подробнее</button>
                 </div>
-                <div>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTVTSSieTVLYDiZdO-uwDxYQ8erJu3kl8eEw&usqp=CAU" alt="fullstack-icon" width="100px">
-                    <h3>Fullstack</h3>
-                    <p>Комплексная разработка сайта</p>
-                    <table>
-                        <tr>
-                            <td><img src="image/html-logo.png" alt="html-logo" width="30px"></td>
-                            <td><img src="image/css.png" alt="css-logo" width="30px"></td>
-                            <td><img src="image/Unofficial_JavaScript_logo_2.svg.png" alt="js-logo" width="30px"></td>
-                            <td><img src="image/react.png" alt="react-logo" width="30px"></td>
-                            <td><img src="image/Angul.png" alt="angular-logo" width="30px"></td>
-                        </tr>
-                        <tr>
-                            <td><img src="image/python.png" alt="py-logo" width="30px"></td>
-                            <td><img src="image/dj-logo.png" alt="django-logo" width="30px"></td>
-                            <td><img src="image/128px-Node.js_logo.svg.png" alt="nodejs-logo" width="30px"></td>
-                            <td><img src="image/Postgresql_elephant.svg.png" alt="PostgreSQL-logo" width="30px"></td>
-                            <td><img src="image/SQL-logo.png" alt="SQL-logo" width="30px"></td>
-                        </tr>
-                    </table>
+            </div>
+            <div class="portfolio__card">
+                <img src="https://dwgformat.ru/wp-content/uploads/2021/12/Inzhenernoe-oborudovanie-zdanij-i-sooruzhenij.jpg" alt="Компания КОМПЛИТ">
+                <div class="card__info">
+                    <h3>Компания КОМПЛИТ</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <button>Подробнее</button>
+                </div>
+            </div>
+            <div class="portfolio__card">
+                <img src="https://ttspb.ru/wp-content/uploads/2022/08/01-1.jpg" alt="Технологии тишины">
+                <div class="card__info">
+                    <h3>Технологии тишины</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <button>Подробнее</button>
+                </div>
+            </div>
+            <!-- <div class="portfolio__card">
+                <img src="https://i.pinimg.com/564x/a3/c7/4e/a3c74e5cc03fa60437c2721d29b2750a.jpg" alt="BIM">
+                <div class="card__info">
+                    <h3>ГК Самолет</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <button>Подробнее</button>
+                </div>
+            </div>
+            <div class="portfolio__card">
+                <img src="https://i.pinimg.com/564x/a3/c7/4e/a3c74e5cc03fa60437c2721d29b2750a.jpg" alt="BIM">
+                <div class="card__info">
+                    <h3>ГК Самолет</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <button>Подробнее</button> -->
                 </div>
             </div>
         </div>
-        <div class="portfolio">
-            <h2 id="portfolio">Портфолио</h2>
-            <div>
-                <a href="https://www.bimstep.com/ru" target="_blank">КОМПЛЕКС РЕШЕНИЙ ПО АВТОМАТИЗАЦИИ BIM-ПРОЦЕССОВ В ПРОЕКТИРОВАНИИ</a>
+    </div>
+    <div class="experience">
+        <h2 id="experience">Опыт работы</h2>
+        <div class="exp__cards">
+            <div class="exp">
+                <h3>Cпециалист по автоматизации</h3>
+                <div class="exp__desc">
+                    <h4>ГК Самолет, Москва</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus laborum error maxime quasi quaerat at cupiditate deleniti tenetur aliquam doloremque recusandae fugiat corrupti repudiandae impedit, officia labore optio minus inventore?
+                    Repellendus amet itaque dignissimos doloremque praesentium modi hic! Quibusdam, qui libero cumque, optio maiores quos, dolorem quod exercitationem non iste minima molestias totam nesciunt reiciendis? Modi totam deleniti iure saepe?
+                    Repellat, illum aspernatur nostrum, debitis ex nam provident vel facilis suscipit molestiae soluta odit veritatis doloremque porro aliquam eligendi error culpa. Voluptate consectetur blanditiis sequi, autem minima amet saepe doloribus.
+                    Magnam, ipsa autem eveniet voluptates nulla minima fugit fuga officia optio, quaerat qui voluptas esse eos doloremque, atque aperiam odit odio iste deleniti culpa dolore sint reiciendis. Rerum, sit quae?
+                    Sapiente soluta commodi sunt atque dignissimos dolor, itaque debitis voluptatem, et, iusto a! Accusantium repellendus earum, unde magni nobis quisquam perferendis incidunt nostrum error modi odio corrupti quod rerum id.</p>
+                </div>
             </div>
-            <div>
-                <img src="image/Bim Step.png" alt="BimStep">
-            </div>
-            <div class="steck-bimstep">
-                <span><b>Технологии:</b></span>
-                <img src="image/python.png" alt="py-logo" width="50px">
-                <img src="image/Revit API - logo.png" alt="revitAPI-logo" width="50px">
-                <img src="image/C-sharp-logo.png" alt="c-sharp-logo" width="50px">
-            </div>
-        </div>
-        <div class="contacts">
-            <h2 id="contacts">Контакты</h2>
-            <div>
-                <p>Хотите узнать больше или просто пообщаться?</p>
-            </div>
-            <button>Отправить сообщение</button>
-            <br>
-            <div class="icons">
-                <a href="https://www.linkedin.com/in/roman-lemeshko/" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAUBJREFUOE/V1b0vZFEYB+BniE5WNJv42JBlC4lGsu3GlrLoFaIWEn+BbzXJJkStVGiWRLuSFUoKiUbJbihJhAJ5kyO5e80wGaYw7XnPc+a97+/cW1CFX6EKpjzag4YKDzrCRezNor34XSEY247RlUcH8esV6F8059EBbCa0D/tYxnCZB52hpRR6g0ZcYwwrb4GGsYEtzOPTW6F7uEUb2rGT4G4cYhdf8AMf0tqz7UdNE/5hEguZlHzDH9wnKKYdh9ThFK3PDeoRnUqPoCYDfcY5rhK8jRhs2f80j45gDSfoTOhPTLwGjYiNJ+xjukFzmC6FZsMfIY4wz2AWtbjDKkYTGpmMlmM96oqG//2g2Wu6mKYbL5nvKQERo358Te0v4TKtR92L7Zd5if4rK4p24AD1lYhYx1A+/BVaT7dV5XPyAOVFXRY9JwsBAAAAAElFTkSuQmCC" alt="linkedin-logo"/></a>
-                <a href="https://instagram.com/roma.lemeshko?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAd1JREFUOE+91EnIzVEYx/HPW0KywAaZo5BIkjFRvGahKCULpUgotrJVpGTIVOws3iRDRCkkscTCmEyFjElZKFOPnn/djntvd/M6u/85z/97nuH3O206YbV1AlMzaHdMQNcGF7/Hg3pn9aBDcADzmgAr1jvsxy78rDZL6Bjcwl104Al+NMi0NyZjff6zGL8jtoTew0fMbqHXOxISGe7ERhwuoUPxHAtwuYD2wFh8wjP8wkOMQn+cwjfML6GzcA0js+w474V9WFNT1VtsS1gX3MwWRCtGl9CFuIiBeJ2ZnsckbMns42wzNhQVHcUcDC+hS3EW/RBTjYwfYQVOF+2IimKA7bkf0LkY1gjaF6HBZTiTgS8K6G6sxoDcD1ktx6ASugRRbgS+wRTcxniEKmrXsTTGxNw8mNC/l9RKqoSGk57iCtZVGkSY4w72pJSCcwQxk8GNBhXSepkZhLwu4DEu5U+L8jwq+J5xxzETI0ro1HRG+D0yqdaMzCrc9gVXsQlfa2JCpzHYcSW0T059O2IQra5ueIUbWFlC43sv1mI67rdAjZkcSt2GJGPQ/3i/Z7oqnHECn5uAAxg6jbbF47Oqiq339IX1tiJenWmI73rrA67jJM7VBvz3l7+FltYP+QObYWIWDKhmhwAAAABJRU5ErkJggg==" alt="instagram-logo"/></a>
-                <a href="https://t.me/Roman_Lemeshko" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAXhJREFUOE/N1D9IllEUx/GPoURKRga6BNpQGNGUNCiogzk0CApGVEr0B2rJyaYaBKslmnMxEkehQRwaChKcHRwKGqIgCAIHB5eC4sR94uHt8X2fF3mhs917zv3ec849v9ukAdbUAKb/FtqMCVzBJub2k+lJ3MY0ulIb1zFUL/QgLuEWBgve4znuloWexR1cQ3uCfcMspjCa9q7jZTXoYVxNWZ3LZfULC3iMFZzP+U7jQxF0IIGizNaKEt/jBj7jLXpz/h0ciXUGPYB70Q+cKujVD8zjCU7gDY5XxMXeSB56LJUylLsoO/MuvfJH9OE1OgoufoQHeWgWE8FjGE+Ah1hMzgt4hbY9VBjnVouge6n2MpbQUkXWnfheFtqDTzX+iC/ozmLKzGk/NmpAY7Qm64FexBq2cBMvcKbikhDB03qgoaL7GMY2DmE5fSIZJ6YmdP/HypQfKvmKGO68zeAZfuIoduuBVmtnKCoyjy/vr5XJtMYb/etuCPQ3yLQ2FuWZ36AAAAAASUVORK5CYII=" alt="telegram-logo"/></a>
-                <a href="https://vk.com/romanlemeshko" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAXBJREFUOE/t1LFLllEUx/GPkGLQIA1KQ4NCNai5CIVBuKRIQ0TYJO4SRIhLW/9ABCJu0tQQiYODKTokLlGkCTk6CY22lJNKnLivHB56X12c6iz33nPO/d5zf+c+T5NzsKZzYPoP/aPqRTzBJexjFodF74foK/MjzOBH6sUoust6Ht9qml7B95QYBwQ4LMaJFHuEhbLux+cUe4DF3KivqaId9JTkLuxWKouKwlYwVOaRcwNHGTqJl2nzPawVaQ6S/zHeIca3yT+C5VhnaOi5h7aS+Am36kDjylsp9w3GagdU3+kzvEqnP8c0fiXfHO7iWvFFL+LaP+tB45AN3EmQ94ir1bMvGGwEjY2d2ExXa8A7CYX2wziuapo3D+ADmv9CfIqo7jWup3g0eaoRNGIhwSIuV8C17rdjFTerz+20H8pVvMA4LpTN97FU5h3l8Ude2Hroexq0VkQLeoscHyuVt+J28W3HJ3xW6FmadZLzj0N/A93hPRazP19AAAAAAElFTkSuQmCC" alt="VK"/></a>
+            <div class="exp">
+                <h3>BIM - координатор</h3>
+                <div class="exp__desc">
+                    <h4>ГК Самолет, Москва</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus laborum error maxime quasi quaerat at cupiditate deleniti tenetur aliquam doloremque recusandae fugiat corrupti repudiandae impedit, officia labore optio minus inventore?
+                    Repellendus amet itaque dignissimos doloremque praesentium modi hic! Quibusdam, qui libero cumque, optio maiores quos, dolorem quod exercitationem non iste minima molestias totam nesciunt reiciendis? Modi totam deleniti iure saepe?
+                    Repellat, illum aspernatur nostrum, debitis ex nam provident vel facilis suscipit molestiae soluta odit veritatis doloremque porro aliquam eligendi error culpa. Voluptate consectetur blanditiis sequi, autem minima amet saepe doloribus.
+                    Magnam, ipsa autem eveniet voluptates nulla minima fugit fuga officia optio, quaerat qui voluptas esse eos doloremque, atque aperiam odit odio iste deleniti culpa dolore sint reiciendis. Rerum, sit quae?
+                    Sapiente soluta commodi sunt atque dignissimos dolor, itaque debitis voluptatem, et, iusto a! Accusantium repellendus earum, unde magni nobis quisquam perferendis incidunt nostrum error modi odio corrupti quod rerum id.</p>
+                </div>
             </div>
         </div>
-    </main>
+    </div>
+
+        <!-- Подключение JS скрипта -->
+        <!-- <script defer src="script.js"></script> -->
 </body>
 
 </html>
